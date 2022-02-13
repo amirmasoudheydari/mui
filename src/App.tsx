@@ -1,24 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import TextField, { TextFieldVariants } from "./components/TextField";
 
 function App() {
+  // let title: string = "social manager";
+
+  // type UserType = {
+  //   name: string;
+  //   email: string;
+  //   age: number;
+  // };
+
+  // type DictionaryType = {
+  //   title: string;
+  //   body: string;
+  //   pages: number;
+  //   user: UserType;
+  // };
+
+  // const dictionary: DictionaryType = {
+  //   title: "social manager",
+  //   body: "social manager social manager social manager social manager social manager ",
+  //   pages: 10,
+  //   user: { name: "ali", email: "mhosseintaher@gmail.com" },
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header name="Hossein" />
+      <TextField
+        label="email"
+        placeholder="enter your email"
+        value=""
+        variant={TextFieldVariants.Md}
+      />
     </div>
   );
 }
