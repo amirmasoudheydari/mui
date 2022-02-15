@@ -1,40 +1,11 @@
-import Header from "./components/Header";
-import TextField, { TextFieldVariants } from "./components/TextField";
+import { Box } from '@mui/material';
+import LandingApplication from './sections/landingApplication/landingApplication'
 
-function App() {
-  // let title: string = "social manager";
 
-  // type UserType = {
-  //   name: string;
-  //   email: string;
-  //   age: number;
-  // };
-
-  // type DictionaryType = {
-  //   title: string;
-  //   body: string;
-  //   pages: number;
-  //   user: UserType;
-  // };
-
-  // const dictionary: DictionaryType = {
-  //   title: "social manager",
-  //   body: "social manager social manager social manager social manager social manager ",
-  //   pages: 10,
-  //   user: { name: "ali", email: "mhosseintaher@gmail.com" },
-  // };
-
+export default function App() {
   return (
-    <div>
-      <Header name="Hossein" />
-      <TextField
-        label="email"
-        placeholder="enter your email"
-        value=""
-        variant={TextFieldVariants.Md}
-      />
-    </div>
+    <Box sx={{ backgroundColor: '#F7F9FC' }}>
+      <LandingApplication />
+    </Box>
   );
 }
-
-export default App;
